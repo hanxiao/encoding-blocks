@@ -74,7 +74,7 @@ def MH_MR_CNN_fuse_v4(seqs, mask, num_heads=4,
                               first_act_fn=tf.nn.relu)
 
 
-def Pool_fuse(seqs, mask, reduce='concat_mean_max', scope=None, reuse=None,
+def Pool_fuse(seqs, mask, reduce='CONCAT_MEAN_MAX', scope=None, reuse=None,
               task_name=None, norm_by_layer=False, dropout_keep=1., **kwargs):
     """
     Simple word embedding fusion
